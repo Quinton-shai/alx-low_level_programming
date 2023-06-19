@@ -1,19 +1,19 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
- * main - Print the alphabets
- *
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alphabets[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-	for (i = 0; i < 26; ++i)
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(alphabets[i]);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
 }
+
