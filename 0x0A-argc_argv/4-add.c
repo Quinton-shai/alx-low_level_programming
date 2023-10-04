@@ -4,9 +4,9 @@
 #include <ctype.h>
 
 /**
- * check_num - check - string there are digit
+ * check_num - check - string there are num
  * @str: array string
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int check_num(char *str)
 {
@@ -30,7 +30,7 @@ int check_num(char *str)
  * main - Print the name of the program
  * @argc: Count arguments
  * @argv: Arguments
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 
 		{
 			str_to_int = atoi(argv[count]);
-			sum += str_to_int;
+			sum = sum + str_to_int;
 		}
 
 		else
@@ -64,4 +64,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
