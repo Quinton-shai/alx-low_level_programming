@@ -3,14 +3,15 @@
 #include <stdio.h>
 
 /**
- * print_all - prints anything
- * @format: list of types of arguments passed to the function
+ * print_all - prints anythin
+ * @format: list of types of arguments passed to the func.
+ *
+ * return: NULL
  */
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *str;
-        char *sep = "";
+	char *str, *sep = "";
 
 	va_list list;
 
