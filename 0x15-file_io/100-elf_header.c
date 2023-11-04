@@ -25,7 +25,7 @@ void check_elf(unsigned char *e_ident)
 {
 	int index;
 
-	for (index = 0; index < 4; ++index)
+	for (index = 0; index < 4; index++)
 	{
 		if (e_ident[index] != 127 &&
 		    e_ident[index] != 'E' &&
@@ -60,7 +60,7 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Print the class of an ELF header.
+ * print_class - Prints the class of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_class(unsigned char *e_ident)
@@ -108,9 +108,9 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- * print_version - Prints the version of an ELF header.
- * @e_ident: A pointer to an array containing the ELF version.
- */
+ *  * print_version - Prints the version of an ELF header.
+ *   * @e_ident: A pointer to an array containing the ELF version.
+ *    */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
@@ -128,8 +128,8 @@ void print_version(unsigned char *e_ident)
 }
 
 /**
- * print_osabi - Print the OS/ABI of an ELF header.
- * @e_ident: A pointer containing the ELF version.
+ * print_osabi - Prints the OS/ABI of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF version.
  */
 void print_osabi(unsigned char *e_ident)
 {
@@ -254,8 +254,9 @@ void close_elf(int elf)
 }
 
 /**
- * main - Shows the information contained in the ELF header at the start of an ELF file.
- * @argc: The numb of arguments supplied to the program.
+ * main - Displays the information contained in the
+ * ELF header at the start of an ELF file.
+ * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  * Return: 0 on success.
  */
